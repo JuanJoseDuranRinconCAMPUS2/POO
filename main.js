@@ -31,22 +31,48 @@ class lapiz{
      getDimension(){
         return this.dimencion
      }
+     getBorrador(){
+        return this.borrador;
+     }
+     getMaterial(){
+        return this.material;
+     }
  }
 
  let obj = undefined;
  let color = document.querySelector(`[name="color"]`);
  let descripcion = document.querySelector(`[name="dimension"]`);
- let marca = document.querySelector(`[name="marca"]`);
+ let marca = document.querySelectorAll(`[name="marca"]`);
+ let borrador = document.querySelectorAll(`[name="borrador"]`);
+ let material = document.querySelectorAll(`[name="material"]`);
+
  addEventListener("DOMContentLoaded", (e)=>{
     obj = new lapiz({});
     console.log(obj);
     color.value = obj.color;
     descripcion.value = obj.dimencion;
-   // marca.value = obj.marca;
-
+    marca.forEach((radio) => {
+        if (radio.value === obj.getMarca()) {
+          radio.checked = true;
+        }
+    })
+    borrador.forEach((radio) => {
+        if (radio.value === obj.getBorrador().toString()) {
+          radio.checked = true;
+        }
+    })
+    material.forEach((radio) => {
+        if (radio.value === obj.getMaterial()) {
+          radio.checked = true;
+        }
+    })
  })
 
  
  function showValue(newValue) {
     document.getElementById("rangeValue").innerHTML = newValue;
  }
+
+ let myString = "true";
+let myBoolean = Boolean(myString);
+
