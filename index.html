@@ -4,54 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>POU</title>
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
-        <fieldset>
-            <legend>Clase Lapiz</legend>
-            <label>Color</label>
-            <input type="color" name="color"><br>
-            <label>Dimension</label>
-            
-            <input type="range" name="dimension" min="0" max="20" oninput="showValue(this.value)"><br>
-            <span id="rangeValue"></span>
-        
-            <fieldset>
-                <legend>Marca</legend>
-                <input type="radio" name="marca" value="Mongo"><label>Mongo</label><br>
-                <input type="radio" name="marca" value="Norma"><label>Norma</label><br>
-                <input type="radio" name="marca" value="Fabel Castle"><label>Fabel Castle</label><br>
-                <input type="radio" name="marca" value="Big"><label>Big</label><br>
-            </fieldset>
-            <fieldset>
-                <legend>Borrador</legend>
-                <input type="radio" name="borrador" value="true"><label>Tiene</label><br>
-                <input type="radio" name="borrador" value="false"><label>No tiene</label><br>
-            </fieldset>
-            <fieldset>
-                <legend>Material</legend>
-                <input type="radio" name="material" value="Madera"><label>Madera</label><br>
-                <input type="radio" name="material" value="Goma"><label>Goma</label><br>
-            </fieldset>
-            <input type="submit" value="Enviar">
-        </fieldset>
-    </form>
-    <br><br><br>
-    <table border="solid">
-        <thead>
-            <tr>
-                <th>Color</th>
-                <th>Dimension</th>
-                <th>Marca</th>
-                <th>Borrador</th>
-                <th>Material</th>
-            </tr>
-        </thead>
-        <tbody>
+    <div class="container">
+        <div class="card">
+            <div class="card-image">	
+                <h2 class="card-heading">
+                    Bienvenido
+                    <small>a mi primer acercamiento con POO</small>
+                </h2>
+            </div>
+            <form id="myFormData">
+                <fieldset>
+                    <legend>Clase Lapiz</legend>
+                    <label>Color</label>
+                    <input type="color" name="color"><br>
+                    <label>Dimension</label>
+                    
+                    <input type="range" name="dimension" min="0" max="20" oninput="showValue(this.value)">
+                    <span id="rangeValue">19</span><label>cm</label>
+                
+                    <fieldset>
+                        <legend>Marca</legend>
+                        <input type="radio" name="marca" value="Mongo"><label>Mongo</label><br>
+                        <input type="radio" name="marca" value="Norma"><label>Norma</label><br>
+                        <input type="radio" name="marca" value="Fabel Castle"><label>Fabel Castle</label><br>
+                        <input type="radio" name="marca" value="Big"><label>Big</label><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Borrador</legend>
+                        <input type="radio" name="borrador" value="true"><label>Tiene</label><br>
+                        <input type="radio" name="borrador" value=""><label>No tiene</label><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Material</legend>
+                        <input type="radio" name="material" value="Madera"><label>Madera</label><br>
+                        <input type="radio" name="material" value="Goma"><label>Goma</label><br>
+                    </fieldset>
+                    <button  type="submit" value="Enviar" id="boton"> Enviar
+                    </button>
+                
+                </fieldset>
+            </form>
+            <div class="card-info">
+                <p>Plantilla Form <a href="https://codepen.io/havardob/pen/eYJPwdb">Derechos :3</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <table border="solid" id="myTablitaData" class="div_hide">
+                <thead>
+                    <tr>
+                        <th>Color</th>
+                        <th>Dimension</th>
+                        <th>Marca</th>
+                        <th>Borrador</th>
+                        <th>Material</th>
+                    </tr>
+                </thead>
+                <tbody id="myTbodyData">
 
-        </tbody>
-    </table>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+     </div>
 </body>
+
 </html>
