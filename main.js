@@ -42,7 +42,7 @@ class lapiz{
     console.log(obj);
     color.value = obj.color;
     descripcion.value = obj.dimencion;
-    marca.value = obj.marca;
+   // marca.value = obj.marca;
 
  })
 
